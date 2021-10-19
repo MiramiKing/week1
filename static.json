@@ -16,6 +16,7 @@
   },
   "routes":{
   "/login/":"index.html",
-  "/sample/":"task.html"
+  "/sample/":"task.html",
+  "/promise/":"promise.html"
   } 
 }
