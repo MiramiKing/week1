@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   </head>
+   <body>
+      <input id="inp"\>
+      <button id="bt">Тык!</button>
+   </body>
+   <script>
+      document.getElementById("bt").addEventListener('click',async () => {
+               let url= document.getElementById("inp").value;
+               let response = await fetch(url);
+      let text = await response.text();
+               document.getElementById("inp").value = text;
+               })
+   </script>
+</html>
