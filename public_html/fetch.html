@@ -10,7 +10,7 @@
       document.getElementById("bt").addEventListener('click',async () => {
                let url= document.getElementById("inp").value;
                let response = await fetch(url,{mode: 'no-cors'});
-      let text = await response.text();
+               let text = await response.text();
                document.getElementById("inp").value = text;
                })
    </script>
