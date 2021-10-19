@@ -9,7 +9,8 @@
    <script>
       document.getElementById("bt").addEventListener('click',async () => {
                let url= document.getElementById("inp").value;
-               let response = await fetch(url);
+               let response = await fetch(url,{header: {
+               'Access-Control-Allow-Origin':'*',}});
                let text = await response.text();
                document.getElementById("inp").value = text;
                })
