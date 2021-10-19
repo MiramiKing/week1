@@ -24,5 +24,6 @@
   "/sample/":"task.html",
   "/promise/":"promise.html",
   "/fetch/":"fetch.html"
-  } 
+  },
+  "https_only": true
 }
